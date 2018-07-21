@@ -19,13 +19,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class UserControllerTest {
 
-	@Value("${local.server.port}")
-	private int localServerPort;
-
 	@Autowired
 	private TestRestTemplate template;
-
-	
 
 	/**
 	 * Should successfully get response when user id and code is provided for validation.
